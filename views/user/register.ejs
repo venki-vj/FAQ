@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %> 
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1609518045948-fdaf5cbe31ed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="" class="card-img-top">
+            <div class="card-body">
+            <h1 class="card-title">Register</h1>
+            <form action="/register" class='validated-form' novalidate method="post">
+                <div class="mb-3 input-group">
+                    <label for="username" class="input-group-text">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" autofocus required>
+                    <div class="valid-feedback">
+                        Looks Good!!
+                    </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <label for="email" class="input-group-text">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks Good!!
+                    </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <label for="password" class="input-group-text">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks Good!!
+                    </div>
+                </div>
+                <button class="btn btn-success btn-block">Register</button>
+            </form>
+            <a href="/login" style="text-decoration: none;"><button class="btn btn-secondary btn-block mt-3">Login</button></a>
+        </div>
+        </div>
+
+        </div>
+    </div>    
+</div>
