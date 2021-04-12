@@ -161,7 +161,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 })
 // || 3000;
- const port= 9090;
+ const port= process.env.PORT;
 
 app.listen(port,()=>{
     console.log(`Serving at port ${port}`)
